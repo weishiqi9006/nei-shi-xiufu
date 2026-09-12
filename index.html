@@ -6,24 +6,24 @@
   <meta name="description" content="信琢汽车内饰修复工作室，专注汽车内饰皮质修复、塑料件修复与皮质去染色。" />
   <title>信琢汽车内饰修复工作室</title>
   <style>
-    :root{--ink:#171717;--muted:#686868;--paper:#f4f1eb;--card:#fff;--line:#d9d4ca;--accent:#8a6848}
+    :root{--ink:#171717;--muted:#625f59;--paper:#f4f1eb;--card:#fff;--line:#d9d4ca;--accent:#8a6848;--warm:#e9e0d4;--sand:#eee7dc;--sage:#e4e5dc;--stone:#e5e1dc}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--paper);line-height:1.7}
-    .wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
-    .brand{font-weight:700;letter-spacing:.08em}.brand small{display:block;font-size:10px;font-weight:500;letter-spacing:.18em;color:var(--muted)}
+    .wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);gap:24px}
+    .brand{font-weight:700;letter-spacing:.05em;white-space:nowrap}.brand small{display:block;font-size:10px;font-weight:500;letter-spacing:.18em;color:var(--muted)}
     .nav a{color:var(--ink);text-decoration:none;font-size:14px;margin-left:28px}.hero{min-height:650px;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:70px;padding:70px 0}
-    .eyebrow{font-size:12px;letter-spacing:.25em;color:var(--accent);font-weight:700}.hero h1{font-size:clamp(46px,7vw,86px);line-height:1.06;margin:18px 0 24px;letter-spacing:-.04em}.hero p{max-width:610px;color:var(--muted);font-size:17px}
+    .eyebrow{font-size:12px;letter-spacing:.25em;color:var(--accent);font-weight:700}.hero h1{font-size:clamp(46px,7vw,86px);line-height:1.06;margin:18px 0 24px;letter-spacing:-.04em}.hero p{max-width:610px;color:var(--muted);font-size:17px;background:var(--warm);padding:20px 22px;border-radius:4px;margin:0}
     .btn{display:inline-block;margin-top:22px;padding:13px 22px;border:1px solid var(--ink);color:var(--ink);text-decoration:none;font-size:14px;transition:.2s}.btn:hover{background:var(--ink);color:#fff}
     .material{height:430px;background:linear-gradient(145deg,#252321,#4b4036 48%,#1d1c1a);border-radius:2px;position:relative;overflow:hidden;box-shadow:0 20px 50px #0002}.material:before{content:"";position:absolute;inset:12%;border:1px solid #ffffff28}.material:after{content:"LEATHER · PLASTIC\A RESTORATION";white-space:pre;position:absolute;left:34px;bottom:32px;color:#fff;font-size:12px;letter-spacing:.2em;line-height:2}
-    section{padding:90px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:42px}.section-head h2{font-size:36px;margin:0}.section-head p{margin:0;max-width:500px;color:var(--muted)}
-    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{background:var(--card);padding:34px;min-height:250px;border:1px solid #e8e4dc}.num{font-size:12px;color:var(--accent);letter-spacing:.15em}.service h3{font-size:23px;margin:48px 0 12px}.service p{color:var(--muted);font-size:14px;margin:0}
-    .about{display:grid;grid-template-columns:1fr 1fr;gap:80px}.about h2{font-size:42px;line-height:1.25;margin:0}.about p{color:var(--muted);margin:0}.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.tag{border:1px solid var(--line);padding:7px 12px;font-size:12px}
+    section{padding:90px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:42px}.section-head h2{font-size:36px;margin:0}.section-head p{margin:0;max-width:500px;color:var(--muted);background:var(--sand);padding:17px 20px;border-radius:4px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{background:var(--card);padding:34px;min-height:280px;border:1px solid #e8e4dc}.num{font-size:12px;color:var(--accent);letter-spacing:.15em}.service h3{font-size:23px;margin:48px 0 12px}.service p{color:var(--muted);font-size:14px;margin:0;padding:16px;border-radius:4px}.service:nth-child(1) p{background:var(--warm)}.service:nth-child(2) p{background:var(--sage)}.service:nth-child(3) p{background:var(--stone)}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:80px}.about h2{font-size:42px;line-height:1.25;margin:0}.about p{color:var(--muted);margin:0;background:var(--sand);padding:20px 22px;border-radius:4px}.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.tag{border:1px solid var(--line);padding:7px 12px;font-size:12px;background:#faf8f4}
     footer{padding:45px 0 60px}.foot{display:flex;justify-content:space-between;gap:30px;color:var(--muted);font-size:12px}.foot strong{color:var(--ink)}
-    @media(max-width:760px){.nav-links{display:none}.hero{grid-template-columns:1fr;gap:35px;min-height:auto;padding:70px 0}.material{height:290px}.services{grid-template-columns:1fr}.section-head,.about{display:grid;grid-template-columns:1fr;gap:24px}.hero h1{font-size:52px}section{padding:65px 0}.foot{display:block}.foot div+div{margin-top:12px}}
+    @media(max-width:760px){.nav{padding:15px 0}.brand{font-size:14px}.brand small{font-size:8px}.nav-links{display:none}.hero{grid-template-columns:1fr;gap:35px;min-height:auto;padding:70px 0}.material{height:290px}.services{grid-template-columns:1fr}.section-head,.about{display:grid;grid-template-columns:1fr;gap:24px}.hero h1{font-size:52px}section{padding:65px 0}.foot{display:block}.foot div+div{margin-top:12px}}
   </style>
 </head>
 <body>
   <header class="wrap nav">
-    <div class="brand">信琢 <small>INTERIOR RESTORATION STUDIO</small></div>
+    <div class="brand">信琢汽车内饰修复工作室 <small>INTERIOR RESTORATION STUDIO</small></div>
     <nav class="nav-links"><a href="#services">修复项目</a><a href="#about">工作室</a><a href="#contact">联系</a></nav>
   </header>
 
